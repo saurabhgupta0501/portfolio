@@ -1,0 +1,300 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: rgb(51, 51, 51);
+    background-color: #f3f1f1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: goldenrod;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: burlywood;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #0063d4;
+}
+
+.toggle-mode {
+    background: none;
+    border: 1px solid blueviolet;
+    padding: 0.5rem 1rem;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #d40051, #9521f3);
+    color: rgb(0, 0, 0);
+}
+
+.home .intro {
+    max-width: 50%;
+}
+
+.home .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: violet;
+    color: #320f69;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home .btn:hover {
+    background: #00d40b;
+    color: rgb(184, 160, 56);
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(87, 13, 42);
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d40e00;
+}
+
+.about {
+    padding: 2rem;
+    background: gainsboro;
+    text-align: center;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    display: block;
+}
+
+.btn {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #043157;
+}
+
+/* General styles for the skills section */
+.skills {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Style each skill item */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item span {
+    display: block;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Progress bar container */
+.progress-bar {
+    position: relative;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Progress bar fill */
+.progress-bar div {
+    height: 100%;
+    background: linear-gradient(90deg, #82c484, #063509);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Add hover effect for interactivity */
+.skill-item:hover .progress-bar div {
+    background: linear-gradient(90deg, #4caf50, #063508);
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.certifications {
+    padding: 2rem;
+    background: #fff;
+}
+
+.cert-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cert-card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.cert-card .btn {
+    margin-top: 1rem;
+    background: #2196f3;
+}
+
+.projects {
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    background: rgba(41, 143, 75, 0.226);
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(245, 134, 134, 0.781);
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    background: #00bcd4;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background: rgb(197, 207, 57);
+    color: #fff;
+}
+
+.footer .btn {
+    margin: 0.5rem;
+    background: none;
+    color: #6b043d;
+    border: 1px solid #077240;
+    padding: 0.5rem 1rem;
+}
+
+.footer .btn:hover {
+    background: #00bcd4;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

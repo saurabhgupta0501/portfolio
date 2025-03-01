@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> --> -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="toggle-mode">Day/Night</button>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a passionate web developer eager to showcase my skills.</p>
+            <a href="portfolio-img/saurav kumar cv .pdf" class="btn">Download Resume</a>
+        </div>
+        <div class="profile-image">
+            <img src="portfolio-img/my img.jpeg" alt="Profile Picture">
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>t. Ability to translate business requirements in to real life solutions, strong in design and integration with intuitive problem solving skills, proficient in HTML,css,JavaScript,C,C++,.</p>
+            <button class="btn">Read More</button>
+        </div>
+        <img src="about.jpg" alt="About Me">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-item">
+            <span>HTML</span>
+            <div class="progress-bar"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-item">
+            <span>CSS</span>
+            <div class="progress-bar"><div style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+            <span>JavaScript</span>
+            <div class="progress-bar"><div style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-item">
+            <span> C </span>
+            <div class="progress-bar"><div style="width: 70 ;"></div></div>
+        </div>  
+        <div class="skill-item">
+            <span> C++ </span>
+            <div class="progress-bar"><div style="width: 65 ;"></div></div>
+        </div> 
+          
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-cards">
+            <div class="cert-card">
+                <h2>Certification 1</h2>
+                <p>C for evryone: Programming-fundamentals.</p>
+                <a href="portfolio-img/C,C++.pdf" class="btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>Certification 2</h3>
+                <p>Managing Linux System.</p>
+                <a href="portfolio-img/Linex.pdf" class="btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>Certification 3</h3>
+                <p>Crash Course on Python</p>
+                <a href="portfolio-img/pyhton-cert.pdf" class="btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">Project 1<h3>Domain: Web Application | Programming languages</h3>: <h4>HTML, CSS
+                Project</h4>: <bold>Online Food Delivery System.</bold>
+
+                <p>In the realm of web application development, I engineered an end-to-end Online
+                Food Delivery System. Utilizing HTML and CSS, I curated an intuitive front-end
+                interface. Leveraging Django, Python, and JavaScript, I orchestrated a robust
+                backend, ensuring seamless order processing, user interaction, and database
+                management. By prioritizing user experience and security, I integrated real-time
+                updates, secure authentication, and responsive design. This project not only
+                showcased my technical prowess but also highlighted my commitment to delivering
+                user-centric solutions while fostering positive and professional customer interactions.
+                </p>
+            </div>
+            <div class="project-card">Project 2 <h3>Domain: Peer to peer chat application on local server, Java, SQL
+                Project</h3><h4>Peer-to-Peer Chat Application</h4>
+                <p>In the domain of local server communication, I conceptualized and
+                executed a Peer-to-Peer Chat Application. Leveraging Java and SQL, I
+                engineered a user-friendly interface enabling seamless, real-time
+                communication among users. By ensuring secure authentication,
+                efficient data management, and an intuitive chat screen, the application
+                facilitated dynamic interactions. My project underscored my adeptness
+                in Java and SQL while highlighting my commitment to crafting efficient
+                and engaging solutions for local network communication.</p>
+            </div>
+            <div class="project-card">Project 3<h3> Domain: Arduino | Programming languages</h3>: <h4>C, Python
+                Project:</h4>
+                <p> Smart Specs for Blind people With the integration of GPS, camera, Bluetooth, Wi-Fi, and Arduino, Smart
+                Spectacles are a sophisticated assistive technology that may significantly improve the
+                freedom and quality of life of visually impaired people by providing improved
+                navigation, object identification, and connection. This all-inclusive approach
+                represents a major breakthrough in assistive technology as it seeks to remove
+                accessibility obstacles and encourage more involvement in daily activities</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <a href="mob:8210868446" class="btn">Call me</i></a>
+        <a href="whats-app: 9504242865" class="btn"> <i class="fab fa-whatsapp"></i> </a>
+        <a href="sauravgupta57957@gmail.com" class="btn">Email Me <i class="fab fa-email"></i></a>
+    </footer>
+</body>
+</html>
